@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>blog</title>
+<style>
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dd,input{margin:0px;padding:0px;}
+ul{list-style:none;}
+a{text-decoration:none;}
+img{border:none;}
+*{font-family:arial}
+.inner{width:1140px;margin:0 auto;}
+.header{height:83px;box-shadow:0 0 4px 0 rgba(0,4,0,0.5);z-index:2;position:relative;}
+.header .logo{padding:17px 152px 0 0;float:left;}
+.header ul{float:left;}
+.header li{float:left;line-height:80px;}
+.header li a{display:block;color:#465248;padding:0 24px;border-top:3px solid #fff;color:#000;}
+.header .bot1{border-top:3px solid #eb5846;color:#ef740a;background-image:url(images/top_03.jpg); background-repeat:repeat-x;}
+.header li a:hover{border-top:3px solid #eb5846;color:#ef740a;background-image:url(images/top_03.jpg); background-repeat:repeat-x;}
+
+
+.header .icon{float:right;margin-top:29px;}
+.header .icon a{width:23px;height:22px;float:left;margin-left:7px;display:block;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-242px -7px;}
+
+.header .icon .fa:hover{background-position:-242px -46px;}
+.header .icon .tw{background-position:-268px -7px;}
+.header .icon .tw:hover{background-position:-268px -46px;}
+.header .icon .wifi{background-position:-294px -7px;}
+.header .icon .wifi:hover{background-position:-294px -46px;}
+.header .icon .v{background-position:-319px -7px;}
+.header .icon .v:hover{background-position:-319px -46px;}
+.header .icon .you{background-position:-344px -7px;}
+.header .icon .you:hover{background-position:-344px -46px;}
+.header .icon .in{background-position:-369px -7px;}
+.header .icon .in:hover{background-position:-369px -46px;}
+
+.banner{height:1972px;position:relative;}
+.banner .zuo{width:870px;height:538px;float:left;}
+.banner .zuo h3{line-height:22px;font-size:18px;padding:42px 0 0px 17px;}
+.banner .zuo p{line-height:45px;height:45px;font-size:13px;padding-left:18px;}
+.banner .zuo p a{color:#eb5942}
+.banner .zuo img{width:800px;height:417px;margin-left:17px;border:6px solid #ed5844;}
+.banner .xia{width:870px;height:295px;float:left;}
+.banner .xia h4{line-height:40px;padding:0 0 14px 17px;height:17px;color:#9e9e9f;}
+.banner .xia h4 a{color:#eb5942;}
+.banner .xia p{line-height:23px;font-size:15px;padding-left:17px;color:#9e9e9f;}
+
+.banner .you{width:270px;height:833px;float:right;position:absolute;right:380px;}
+.banner .you_s{height:539px;}
+.banner .you_x{height:294px;}
+.banner .you_s h2{line-height:68px;height:68px;padding-top:17px;font-size:19px;}
+.you_s > h2:nth-child(3){margin-bottom:22px;}
+.banner .you_s .text{width:209px;height:42px;border:1px solid #dbdbdb;padding-left:20px;float:left;color:#989898;}
+.banner .you_s .sousuo{width:25px;height:44px;float:left;background-image:url(images/search.png);background-repeat:no-repeat;background-color:#fff;background-position:center;}
+.banner .you_s li{height:23px;}
+.banner .you_s li a{color:#989898;margin-left:4px;}
+.banner .you_s img{width:6px;height:9px;}
+.you_s > h2:nth-child(5){line-height:50px;height:50px;padding-top:0px;}
+.you_s > h2:nth-child(7){line-height:50px;height:50px;padding-top:0px;}
+.banner .you_s .pic img{width:114px;height:73px;float:left;padding:8px 6px 0 6px ;}
+
+.banner .yj{width:1116px;height:1138px;float:left;}
+.banner .yj_s h2{line-height:40px;height:40px;padding-left:18px;}
+.banner .yj_s li{height:60px;padding:7px 0 7px 24px;}
+.banner .yj_s h4{line-height:21px;height:21px;color:#a5a5a5;}
+.banner .yj_s .text{width:808px;height:38px;background-color:#eee}
+.banner .yj_s .web{width:808px;height:38px;background-color:#eee;color:#858585;}
+.banner .yj_s .com{width:1116px;height:239px;padding:19px 0 0 24px;}
+.banner .yj_s .com h4{line-height:21px;height:21px;color:#a5a5a5;}
+.com > textarea:nth-child(2){width:808px;height:150px;resize:none;background-color:#eee;}
+.banner .yj_s .bot a{width:145px;height:52px;background-color:#ed5844;color:#fbf0ec;font-size:20px;line-height:52px;text-align:center;display:block;font-weight:bolder;border-radius:4px;margin-top:16px;box-shadow:0 0 5px 0 rgba(0,0,0,.5) inset;}
+.banner .comm{height:585px;}
+.banner .comm h3{line-height:61px;height:61px;font-size:25px;padding:35px 0 0 17px;}
+.banner .comm li{height:199px;padding-left:16px;border:1px solid #d4d4d4;margin-bottom:40px;position:relative;}
+.banner .comm .c_p img{width:158px;height:158px;padding:17px 0 0 15px;float:left;}
+.banner .comm li h3{height:20px;line-height:20px;float:left;font-size:21px;color:#81817f;padding:14px 0 0 47px;}
+.banner .comm li p{width:850px;float:left;line-height:23px;font-size:19px;padding-left:47px;color:#929292;}
+.banner .comm .on p{line-height:73px;heigt:73px;padding-left:47px;fone-size:19px;}
+.banner .comm .rep a{width:99px;height:43px;float:right;display:block;background-color:#ed5844;color:#fbf0ec;text-align:center;font-size:20px;line-height:43px;font-weight:bolder;border-radius:4px;box-shadow:0 0 5px 0 rgba(0,0,0,.5) inset;position:absolute;right:100px;top:136px;}
+
+.footer{height:274px;background-color:#373737;}
+.footer li1{width:299px;height:273px;float:left;}
+.footer li1 h3{width:150px;height:30px;display:block;font-size:15px;color:#fff;padding:31px 0 0 14px;border-bottom:1px solid #060608;}
+.footer li1 p{line-height:23px;font-size:14px;color:#9b9a9f;padding:18px 0 0 15px;}
+
+.footer li2{width:299px;height:273px;float:left;}
+.footer li2 h3{width:133px;height:30px;display:block;font-size:15px;color:#fff;padding-top:31px;border-bottom:1px solid #060608;}
+
+.footer .box1{height:37px;float:left;margin-top:25px;}
+.footer .box1 .box1_1{width:74px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box1 .box1_2{width:68px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box1 .box1_3{width:96px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer .box2{height:37px;float:left;margin-top:4px;}
+.footer .box2 .box2_1{width:99px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:2px;line-height:37px;}
+.footer .box2 .box2_2{width:68px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box2 .box2_3{width:96px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer .box3{height:37px;float:left;margin-top:4px;}
+.footer .box3 .box3_1{width:49px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:2px;line-height:37px;}
+.footer .box3 .box3_2{width:77px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box3 .box3_3{width:68px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer .box4{height:37px;float:left;margin-top:4px;}
+.footer .box4 .box4_1{width:84px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:2px;line-height:37px;}
+.footer .box4 .box4_2{width:49px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer li3{width:285px;height:273px;float:left}
+.footer li3 h3{width:132px;height:30px;font-size:15px;padding-top:31px;color:#fff;border-bottom:1px solid #060608;margin-bottom:20px;}
+.footer li3 .tu{width:285px;height:82px;}
+.footer .tu_1{width:30px;height:72px;float:left;}
+.footer .tu p{float:left;line-height:21px;font-size:14px;padding-bottom:12px;}
+.footer .tu p a{color:#cececf;font-size:14px;}
+.footer .tu p2{color:#f7f7f7;font-size:15px;}
+
+.footer li4{width:257px;height:273px;float:left;}
+.footer li4 h3{width:131px;height:30px;border-bottom:1px solid #000;padding-top:31px;color:#fff;}
+.footer li4 .pic{height:143px;padding-top:19px;}
+
+.last{height:52px;background-color:#232323}
+.last .log{float:right;padding-top:20px;}
+.last .log1{float:left;padding-top:14px;}
+.last .text{float:right;padding-top:22px;}
+
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class="inner">
+    	<div class="logo"><img src="images/logo.png" /></div>
+        <ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="PORTFOLIO.html">Portfolio</a></li>
+            <li><a href="Features.html">Features</a></li>
+            <li><a href="blog.html" class="bot1">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="icon">
+        		<a href="#" class="fa"></a></li>
+        		<a href="#" class="tw"></a>
+        		<a href="#" class="wifi"></a>
+        		<a href="#" class="v"></a>
+        		<a href="#" class="you"></a>
+        		<a href="#" class="in"></a>
+        </div>
+    </div>
+</div>
+<div class="banner">
+	<div class="inner">
+    	<div class="zuo">
+        	<h3>LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISCING ELIT</h3>
+            <p>Posted 02.05.2015 at 18:00h in Web Author By <a href="#">Jhone Smith</a> / <a href="#">60 Likes</a> / <a href="#">2 Comments</a>
+</p>
+        	<div class="z_pic"><img src="images/single.jpg" /></div>
+        </div>
+        <div class="xia">
+        	<h4><a href="#">3D Printing,</a><a href="#">3D Software,</a><a href="#">Files to Print</a> | <span>on february 14,2015</span></h4>
+        	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like
+</p>
+        </div>
+        <div class="you">
+        	<div class="you_s">
+            	<h2>BLOG SEARCH</h2>
+                <form>
+                	<input type="text" value="Enter to search..." class="text" />
+                    <input type="button" value="" class="sousuo" />
+                </form>
+                <h2>CATEGORIES</h2>
+                <ul>
+                	<li><a href="#"><img src="images/b_arrow.png" /> Cras ut ultrices</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> Nullam id enim</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> scelerisque enim</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> Ut tincidunt</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> Aliquam mauris nunc,</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> convallis ex urna, ege</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> et commodo</a></li>
+                </ul>
+                <h2>ARCHIVES</h2>
+                <ul>
+                	<li><a href="#"><img src="images/b_arrow.png" /> February 2015</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> January 2015</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> December 2015</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> November 2015</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> February 2015</a></li>
+                	<li><a href="#"><img src="images/b_arrow.png" /> December 2015</a></li>
+                </ul>
+                <h2>FEATURE POSTS</h2>
+                <div class="pic"><a href="#"><img src="images/s1.jpg" /></a></div>
+                <div class="pic"><a href="#"><img src="images/s2.jpg" /></a></div>
+                <div class="pic"><a href="#"><img src="images/s3.jpg"/></a></div>
+                <div class="pic"><a href="#"><img src="images/s4.jpg" /></a></div>
+                <div class="pic"><a href="#"><img src="images/s5.jpg" /></a></div>
+                <div class="pic"><a href="#"><img src="images/s6.jpg"/></a></div>
+            </div>
+        </div>
+        <div class="yj">
+        	<div class="yj_s">
+            	<h2>LEAVE A COMMENT</h2>
+                <ul>
+                	<li>
+                    <h4>Name</h4>
+                    <form><input type="text" value="" class="text"</form>
+                	</li>
+                	<li>
+                    <h4>Email</h4>
+                    <form><input type="text" value="" class="text"</form>
+                	</li>
+                	<li>
+                    <h4>Website</h4>
+                    <form><input type="text" value="http://w3layouts.com" class="web"</form>
+                	</li>
+                </ul>
+                <div class="com">
+                	<h4>Comment</h4>
+                    <textarea></textarea>
+                    <div class="bot"><a href="#">SEND</a></div>
+                </div>
+            </div>
+        	<div class="yj_x"></div>
+        <div class="comm">
+        	<h3>COMMENTS</h3>
+            <ul>
+            	<li>
+                <div class="c_p"><img src="images/avatar.jpg" /></div>
+                <h3>TOM BROWN</h3>
+                <P>Vivamus congue turpis in laoreet sem nec ultrices.reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as to using 'Content here, content here', making it look like readable English. Sed semper purus sit amet lorem elementum faucibus.</P>
+                <div class="on"><p>On April 14, 2014, 18:01</p></div>
+                <div class="rep"><a href="#">REPLY</a></div>
+                </li>
+            	<li>
+                <div class="c_p"><img src="images/avatar.jpg" /></div>
+                <h3>TOM BROWN</h3>
+                <P>Vivamus congue turpis in laoreet sem nec ultrices.reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as to using 'Content here, content here', making it look like readable English. Sed semper purus sit amet lorem elementum faucibus.</P>
+                <div class="on"><p>On April 14, 2014, 18:01</p></div>
+                <div class="rep"><a href="#">REPLY</a></div>
+                </li>
+            
+            </ul>
+        </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+	<div class="inner">
+    	<ul>
+        	<li1>
+            	<h3>ABOUT STUDEON</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+            </li1>
+        	<li2>
+            	<h3>THE TAGS</h3>
+            	<div class="box1">
+                	<div class="box1_1">Awesome</div>
+                	<div class="box1_2">Strategy</div>
+                	<div class="box1_3">Photography</div>
+                </div>
+            	<div class="box2">
+                    <div class="box2_1">Development</div>
+                	<div class="box2_2">Css</div>
+                	<div class="box2_3">photoshop</div>
+                </div>
+            	<div class="box3">
+                    <div class="box3_1">Html</div>
+                	<div class="box3_2">Awesome</div>
+                	<div class="box3_3">Strategy</div>
+                </div>
+            	<div class="box4">
+                    <div class="box4_1">Photoshop</div>
+                	<div class="box4_2">Html</div>
+                </div>
+            </li2>
+            <li3>
+            <h3>LATEST TWEETS</h3>
+            <div class="tu">
+            	<div class="tu_1"><img src="images/tw.png" /></div>
+                <p>I like this awesome freebie. Check<br/> it out <a href="#">@http://t.co/9vslJFpW</a></p>
+                <p2>ABOUT 15 MINS</p2>
+                
+            </div>
+            <div class="tu">
+            	<div class="tu_1"><img src="images/tw.png" /></div>
+                <p>I like this awesome freebie. Check<br/> it out <a href="#">@http://t.co/9vslJFpW</a></p>
+                <p2>ABOUT 15 MINS</p2>
+                
+            </div>
+            </li3>
+            <li4>
+            	<h3>FLICKR FEED</h3>
+                <div class="pic">
+                	<a href="#"><img src="images/f1.png" /></a>
+                	<a href="#"><img src="images/f2.png" /></a>
+                	<a href="#"><img src="images/f3.png" /></a>
+                	<a href="#"><img src="images/f4.png" /></a>
+                	<a href="#"><img src="images/f3.png" /></a>
+                	<a href="#"><img src="images/f2.png" /></a>
+                </div>
+            </li4>
+        </ul>
+    </div>
+</div>
+<div class="last">
+	<div class="log"><a href="#"><img src="images/move-top.png" /></a></div>
+	<div class="inner">
+    	<div class="log1"><img src="images/logo2.png" /></div>
+		<div class="text">Copyright@2015 All rights Reserved | Template by  <a href="#">W3layouts</a></div>
+	</div>
+</div>
+
+</body>
+</html>

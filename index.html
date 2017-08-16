@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<style>
+body,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dd,input{margin:0px;padding:0px;}
+ul{list-style:none;}
+a{text-decoration:none;}
+img{border:none;}
+*{font-family:arial}
+.inner{width:1140px;margin:0 auto;}
+.header{height:83px;box-shadow:0 0 4px 0 rgba(0,4,0,0.5);z-index:2;position:relative;}
+.header .logo{padding:17px 152px 0 0;float:left;}
+.header ul{float:left;}
+.header li{float:left;line-height:80px;}
+.header li a{display:block;color:#465248;padding:0 24px;border-top:3px solid #fff;color:#000;}
+.header .bot1{border-top:3px solid #eb5846;color:#ef740a;background-image:url(images/top_03.jpg); background-repeat:repeat-x;}
+.header li a:hover{border-top:3px solid #eb5846;color:#ef740a;background-image:url(images/top_03.jpg); background-repeat:repeat-x;}
+
+
+.header .icon{float:right;margin-top:29px;}
+.header .icon a{width:23px;height:22px;float:left;margin-left:7px;display:block;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-242px -7px;}
+
+.header .icon .fa:hover{background-position:-242px -46px;}
+.header .icon .tw{background-position:-268px -7px;}
+.header .icon .tw:hover{background-position:-268px -46px;}
+.header .icon .wifi{background-position:-294px -7px;}
+.header .icon .wifi:hover{background-position:-294px -46px;}
+.header .icon .v{background-position:-319px -7px;}
+.header .icon .v:hover{background-position:-319px -46px;}
+.header .icon .you{background-position:-344px -7px;}
+.header .icon .you:hover{background-position:-344px -46px;}
+.header .icon .in{background-position:-369px -7px;}
+.header .icon .in:hover{background-position:-369px -46px;}
+
+.banner{height:520px;background-image:url(images/bg.jpg);no-repeat;}
+.banner .inner .zuo{width:330px;height:520px;float:left;}
+.banner img{width:638px;height:383px;float:right;padding:71px 37px 0 0;}
+.banner .news{width:330px;float:left;padding:98px 0 0 15px;}
+.banner .n_1{height:83px;background-color:#ed5844;}
+.banner .n_2{height:83px;background-color:#ed5844;}
+.banner .n_1 p{height:83px;line-height:83px;font-size:50px;color:#ffffff;font-weight:bolder;padding-left:8px;}
+.banner .n_2 p{height:83px;line-height:83px;font-size:50px;color:#ffffff;font-weight:bolder;padding-left:8px;}
+.banner .n_2{width:265px;margin:1px 0 1px 0}
+.banner .n_3{height:27px;padding-top:46px;}
+.banner .n_3 a{width:51px;height:27px;float:left;margin-right:8px;background-color:#ffffff;}
+.banner .red{width:49px;height:25px;background-color:#ed5844;margin:1px 0 0 1px;}
+
+.main .news2{height:416px;}
+.main .new{height:276px;padding-top:70px;}
+.main .new li{width:360px;height:128px;background-image:url(images/ser-bg.png);padding-right:20px;background-repeat:no-repeat;float:left;margin-bottom:20px;}
+
+.main .new .tupian{width:67px;height:123px;float:left;background-color:#ed5844;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:18px 43px;}
+.main .new .tupian2{width:67px;height:123px;float:left;background-color:#ed5844;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-67px 42px;}
+.main .new .tupian3{width:67px;height:123px;float:left;background-color:#ed5844;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-144px 44px;}
+.main .new .tupian4{width:67px;height:123px;float:left;background-color:#ed5844;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:22px -74px;}
+.main .new .tupian5{width:67px;height:123px;float:left;background-color:#ed5844;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-63px -69px;}
+.main .new .tupian6{width:67px;height:123px;float:left;background-color:#ed5844;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-142px -69px;}
+
+.main .new li .text1{width:293px;height:128px;float:right;}
+.main .new h4{line-height:38px;height:38px;padding:11px 0 0 90px;}
+.main .new p{line-height:20px;padding-left:90px;font-size:12px;}
+.main .news2{border-bottom:3px double #dddddd;}
+
+.main .news3{height:244px;border-bottom:3px double #ddd}
+.main .n_4{width:1132px;height:130px;background-color:#eee;border:3px double #dddddd;margin-top:56px;border-left:5px solid #ed5746;}
+.main .news3 h4{line-height:12px;height:12px;float:left;font-size:15px;padding:44px 0 0 35px;}
+.main .news3 p{line-height:7px;height:7px;float:left;font-size:13px;padding:21px 0 0 35px;}
+.main .news3 .bot a{width:155px;height:57px;display:block;float:right;background-color:#e85f4f;color:#fff;margin:-20px 44px 0 0;border-radius:4px;box-shadow:0 0 5px 0 rgba(0,0,0,0.4) inset;}
+.main .news3 .bot img{float:left;padding:13px 9px 12px 8px;}
+.main .news3 .bot h3{float:left;font-size:19px;line-height:57px;}
+
+.main .news4{height:575px;border-bottom:3px double #dddddd;position:relative;}
+.main .nei{padding-top:49px;height:470px;}
+.main .nei li{width:275px;float:left;background-color:#dddddd;margin-right:12px;}
+.main .nei li4{width:275px;float:left;background-color:#dddddd;margin-right:0px;}
+.main .n_p img{width:247px;height:310px;}
+.main .n_p{widht:247px;height:456px;padding:14px 14px 0 14px;position:relative;}
+.main .n_p h3{height:46px;line-height:46px;font-size:15px;}
+.main .n_p p{line-height:23px;font-size:12px;padding-top:7px;color:#9a9a9a;}
+.main .web{width:248px;height:27px;position:absolute;top:297px;}
+.main .web_1 img{width:113px;height:27px;float:left;}
+.main .web_2 img{width:27px;height:27px;float:left;padding-left:78px;}
+.main .web_3 img{width:27px;height:27px;float:right;}
+.main .the{width:147px;height:14px;background-color:#fff;position:absolute;top:-10px;}
+
+.main .news5{height:244px;border-bottom:3px double #ddd;position:relative;}
+.main .news5_1{width:1138px;height:130px;border:1px solid #ddd;background-color:#eee;margin-top:56px;border-left:5px solid #ed5746;}
+.main .news5_1 h4{line-height:54px;height:54px;font-size:15px;padding:23px 0 0 34px;}
+.main .news5_1 p{line-height:7px;height:7px;font-size:12px;padding-left:34px;}
+.main .news5 img{width:183px;height:130px;float:right;margin-top:-84px;}
+.main .t_1{display:block;width:128px;height:14px;line-heith:14px;font-size:15px;float:left;position:absolute;top:236px;right:1013px;background:#fff;}
+.main .t_2{display:block;width:128px;height:14px;line-heith:14px;font-size:15px;float:right;position:absolute;top:236px;right:245px;background:#fff;}
+
+.main .news6{height:567px;}
+.main .news6 .n_zuo{width:775px;float:left;}
+.main .news6 .n_you{width:400px;float:left;}
+.main .n_zuo li{width:340px;position:relative;margin-right:40px;float:left;}
+.main .n_zuo img{width:340px;height:255px;margin-top:42px;}
+.main .n_zuo h4{line-height:49px;height:49px;}
+.main .n_zuo .n6{width:326px;height:113px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+.main .n_zuo .n6 p{font-size:14px;line-height:23px;padding-top:11px;}
+.main .n_zuo .read{width:97px;height:16px;padding:35px 0 0 13px;}
+.main .n_zuo .read img{width:13px;height:12px;float:right;background-color:#000;margin-top:5px;}
+.main .pic6{width:340px;height:41px;position:absolute;top:257px;}
+.main .pic6 .pic6_1{width:42px;height:41px;display:block;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-240px -168px;float:left;margin-left:253px;}
+.main .pic6 .pic6_2{width:42px;height:41px;display:block;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-291px -123px;float:right;margin-left:3px;}
+.main .pic6 .pic6_3{width:42px;height:41px;display:block;background-image:url(images/s-icons.png);background-repeat:no-repeat;background-position:-240px -123px;float:right;margin-left:253px;}
+
+.main .news6 .n_you{width:365px;height:567px;float:left;}
+.main .n_you li{height:170px;margin-top:23px;}
+.main .pic6_4 img{width:87px;padding-top:20px;float:left;margin-right:15px;}
+.main .n_you h3{line-height:23px;font-size:17px;padding-top:21px;}
+.main .n_you p{line-height:34px;height:34px;font-size:14px;}
+.main .n_you wangzhi{line-height:13px;height:13px;padding-bottom:9px;}
+.main .n_you p2{float:left;line-height:20px;font-size:14px;padding-top:7px;font-style:italic;}
+
+.footer{height:274px;background-color:#373737;}
+.footer li1{width:299px;height:273px;float:left;}
+.footer li1 h3{width:150px;height:30px;display:block;font-size:15px;color:#fff;padding:31px 0 0 14px;border-bottom:1px solid #060608;}
+.footer li1 p{line-height:23px;font-size:14px;color:#9b9a9f;padding:18px 0 0 15px;}
+
+.footer li2{width:299px;height:273px;float:left;}
+.footer li2 h3{width:133px;height:30px;display:block;font-size:15px;color:#fff;padding-top:31px;border-bottom:1px solid #060608;}
+
+.footer .box1{height:37px;float:left;margin-top:25px;}
+.footer .box1 .box1_1{width:74px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box1 .box1_2{width:68px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box1 .box1_3{width:96px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer .box2{height:37px;float:left;margin-top:4px;}
+.footer .box2 .box2_1{width:99px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:2px;line-height:37px;}
+.footer .box2 .box2_2{width:68px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box2 .box2_3{width:96px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer .box3{height:37px;float:left;margin-top:4px;}
+.footer .box3 .box3_1{width:49px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:2px;line-height:37px;}
+.footer .box3 .box3_2{width:77px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+.footer .box3 .box3_3{width:68px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer .box4{height:37px;float:left;margin-top:4px;}
+.footer .box4 .box4_1{width:84px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:2px;line-height:37px;}
+.footer .box4 .box4_2{width:49px;height:37px;background-color:#222;color:#98989a;text-align:center;font-size:14px;float:left;margin-right:3px;line-height:37px;}
+
+.footer li3{width:285px;height:273px;float:left}
+.footer li3 h3{width:132px;height:30px;font-size:15px;padding-top:31px;color:#fff;border-bottom:1px solid #060608;margin-bottom:20px;}
+.footer li3 .tu{width:285px;height:82px;}
+.footer .tu_1{width:30px;height:72px;float:left;}
+.footer .tu p{float:left;line-height:21px;font-size:14px;padding-bottom:12px;}
+.footer .tu p a{color:#cececf;font-size:14px;}
+.footer .tu p2{color:#f7f7f7;font-size:15px;}
+
+.footer li4{width:257px;height:273px;float:left;}
+.footer li4 h3{width:131px;height:30px;border-bottom:1px solid #000;padding-top:31px;color:#fff;}
+.footer li4 .pic{height:143px;padding-top:19px;}
+
+.last{height:52px;background-color:#232323}
+.last .log{float:right;padding-top:20px;}
+.last .log1{float:left;padding-top:14px;}
+.last .text{float:right;padding-top:22px;}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<div class="inner">
+    	<div class="logo"><img src="images/logo.png" /></div>
+        <ul>
+        	<li><a href="index.html" class="bot1">Home</a></li>
+        	<li><a href="PORTFOLIO.html">Portfolio</a></li>
+        	<li><a href="Features.html">Features</a></li>
+        	<li><a href="blog.html">Blog</a></li>
+        	<li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div class="icon">
+        		<a href="#" class="fa"></a></li>
+        		<a href="#" class="tw"></a>
+        		<a href="#" class="wifi"></a>
+        		<a href="#" class="v"></a>
+        		<a href="#" class="you"></a>
+        		<a href="#" class="in"></a>
+        </div>
+    </div>
+</div>
+<div class="banner">
+	<div class="inner">
+    	<div class="zuo">
+        	<div class="news">
+            	<div class="n_1"><P>WELCOME</P></div>
+            	<div class="n_2"><P>TO THE</P></div>
+            	<div class="n_1"><P>STUDEON</P></div>
+                <div class="n_3">
+                	<ul>
+                    	<li><a href="#"><div class="red"></div></a></li>
+                    	<li><a href="#"></a></li>
+                    	<li><a href="#"></a></li>
+                    	<li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="you"><img src="images/slide1.png" /></div>
+    </div>
+</div>
+<div class="main">
+<div class="inner">
+	<div class="news2">
+    	<div class="new">
+        	<ul>
+            	<li><div class="tupian"></div>
+                <h4>EVENTS PLANNING</h4>
+                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem Ipsum<br/> has been the industry.</p>
+                </li>
+            	<li><div class="tupian2"></div>
+                <h4>MASTERING DESIGN</h4>
+                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem Ipsum<br/> has been the industry.</p>
+                </li>
+            	<li><div class="tupian3"></div>
+                <h4>EXPERT DEVELOPERS</h4>
+                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem Ipsum<br/> has been the industry.</p>
+                </li>
+            	<li><div class="tupian4"></div>
+                <h4>ATTENSION TO DETAILS</h4>
+                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem Ipsum<br/> has been the industry.</p>
+                </li>
+            	<li><div class="tupian5"></div>
+                <h4>ANOTHER COOL SERVICE.</h4>
+                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem Ipsum<br/> has been the industry.</p>
+                </li>
+            	<li><div class="tupian6"></div>
+                <h4>EVENTS PLANNING</h4>
+                <p>Lorem Ipsum is simply dummy text of the<br/> printing and typesetting industry. Lorem Ipsum<br/> has been the industry.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="news3">
+    	<div class="n_4">
+        	<h4>HI THERE. I AM A THEME, WITH ATTITUDE. I AM ALSO RESPONSIVE, EASY DO EDIT. WHY DON'T YOU TRY ME ?</h4>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor blandit nec Quisque quis nulla vel dolor ultrices sit amet.</p>
+            <div class="bot"><a href="#"><img src="images/windows.png" /> <h3>BUY NOW!</h3></a></div>
+        </div>
+    </div>
+    <div class="news4">
+    	<div class="nei">
+    		<ul>
+        		<li>
+                	<div class="n_p">
+                    <img src="images/p1.jpg" />
+                    <div class="web">
+                    	<div class="web_1"><img src="images/web_07.jpg" /></div>
+                    	<div class="web_2"><img src="images/web_09.jpg" /></div>
+                    	<div class="web_3"><img src="images/web_11.jpg" /></div>                    
+                    </div>
+                    <h3>I AM AN AMAZING PROJECT</h3>
+                    <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Quisque<br/> quis nulla amet. turpis.WEB DESIGN</p>
+                    </div>
+                </li>
+        		<li>
+                	<div class="n_p">
+                    <img src="images/p2.jpg" />
+                    <div class="web">
+                   	  <div class="web_1"><img src="images/web_07.jpg" /></div>
+                    	<div class="web_2"><img src="images/web_09.jpg" /></div>
+                    	<div class="web_3"><img src="images/web_11.jpg" /></div>                    
+                    </div>
+                    <h3>I AM AN AMAZING PROJECT</h3>
+                    <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Quisque<br/> quis nulla amet. turpis.WEB DESIGN</p>
+                    </div>
+                </li>
+        		<li>
+                	<div class="n_p">
+                    <img src="images/p3.jpg" />
+                    <div class="web">
+                   	  <div class="web_1"><img src="images/web_07.jpg" /></div>
+                    	<div class="web_2"><img src="images/web_09.jpg" /></div>
+                    	<div class="web_3"><img src="images/web_11.jpg" /></div>                    
+                    </div>
+                    <h3>I AM AN AMAZING PROJECT</h3>
+                    <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Quisque<br/> quis nulla amet. turpis.WEB DESIGN</p>
+                    </div>
+                </li>
+        		<li4>
+                	<div class="n_p">
+                    <img src="images/p4.jpg" />
+                    <div class="web">
+                   	  <div class="web_1"><img src="images/web_07.jpg" /></div>
+                    	<div class="web_2"><img src="images/web_09.jpg" /></div>
+                    	<div class="web_3"><img src="images/web_11.jpg" /></div>                    
+                    </div>
+                    <h3>I AM AN AMAZING PROJECT</h3>
+                    <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. Quisque<br/> quis nulla amet. turpis.WEB DESIGN</p>
+                  </div>
+                </li4>
+                
+        	</ul>
+        </div>
+        <div class="the"><h4>THE PORTFOLIO</h4></div>
+    </div>
+    <div class="news5">
+    	<div class="news5_1">
+        <div class="text">
+        	<h4>SUBSCRIBE TO OUR NEWSLETTER. WE HATE SPAM AS MUCH AS YOU DO, SO NO WORRIES.</h4>
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor blandit nec Quisque quis nulla vel dolor ultrices sit amet.</p>
+        	<div class="youjian"><img src="images/youjian_03.jpg" /></div>
+            </div>
+        </div>
+        <div class="t_1">OUR BLOGGY</div>
+        <div class="t_2">TESTMONIALS</div>
+    </div>
+
+    <div class="news6">
+    	<div class="n_zuo">
+        	<ul>
+            	<li>
+                	<img src="images/b1.jpg" />
+                    <div class="pic6">
+                    	<a href="#" class="pic6_1"></a>
+                    	<a href="#" class="pic6_2"></a>
+                    </div>
+                    <h4>JUST A COOL BLOG POST TITLE HERE.</h4>
+                    <div class="n6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor ultrices blandit nec sit amet. turpis, ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                    <div class="read">Read more <span><img src="images/b_arrow.png" /></span></div>
+                </li>
+            	<li>
+                	<img src="images/single.jpg" />
+                    <div class="pic6">
+                    	<a href="#" class="pic6_2"></a>
+                    	<a href="#" class="pic6_3"></a>
+                    </div>
+                    <h4>JUST A COOL BLOG POST TITLE HERE.</h4>
+                    <div class="n6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor ultrices blandit nec sit amet. turpis, ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                    <div class="read">Read more <span><img src="images/b_arrow.png" /></span></div>
+                </li>
+            	<li></li>
+            </ul>
+        </div>
+    	<div class="n_you">
+        	<ul>
+            	<li>
+                	<a href="#" class="pic6_4"><img src="images/t1.jpg" /></a>
+                  <h3>VERY PLEASED WITH THE COOL SERVICES PROVIDED.</h3>
+                  <p>Linda Scott / Webdesigner</p>
+                  <p2><img src="images/quotes.png" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor ultrices blandit nec sit amet. turpis.</p2>
+                  <a href="#" charset="wangzhi">http://www.mywebsite.com</a>
+                </li>
+            	<li>
+                	<a href="#" class="pic6_4"><img src="images/p3.jpg" /></a>
+                  <h3>VERY PLEASED WITH THE COOL SERVICES PROVIDED.</h3>
+                    <p>Linda Scott / Webdesigner</p>
+                    <p2><img src="images/quotes.png" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis nulla vel dolor ultrices blandit nec sit amet. turpis.</p2>
+                    <a href="#" charset="wangzhi">http://www.mywebsite.com</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">
+	<div class="inner">
+    	<ul>
+        	<li1>
+            	<h3>ABOUT STUDEON</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id arcu neque, at convallis est felis.</p>
+            </li1>
+        	<li2>
+            	<h3>THE TAGS</h3>
+            	<div class="box1">
+                	<div class="box1_1">Awesome</div>
+                	<div class="box1_2">Strategy</div>
+                	<div class="box1_3">Photography</div>
+                </div>
+            	<div class="box2">
+                    <div class="box2_1">Development</div>
+                	<div class="box2_2">Css</div>
+                	<div class="box2_3">photoshop</div>
+                </div>
+            	<div class="box3">
+                    <div class="box3_1">Html</div>
+                	<div class="box3_2">Awesome</div>
+                	<div class="box3_3">Strategy</div>
+                </div>
+            	<div class="box4">
+                    <div class="box4_1">Photoshop</div>
+                	<div class="box4_2">Html</div>
+                </div>
+            </li2>
+            <li3>
+            <h3>LATEST TWEETS</h3>
+            <div class="tu">
+            	<div class="tu_1"><img src="images/tw.png" /></div>
+                <p>I like this awesome freebie. Check<br/> it out <a href="#">@http://t.co/9vslJFpW</a></p>
+                <p2>ABOUT 15 MINS</p2>
+                
+            </div>
+            <div class="tu">
+            	<div class="tu_1"><img src="images/tw.png" /></div>
+                <p>I like this awesome freebie. Check<br/> it out <a href="#">@http://t.co/9vslJFpW</a></p>
+                <p2>ABOUT 15 MINS</p2>
+                
+            </div>
+            </li3>
+            <li4>
+            	<h3>FLICKR FEED</h3>
+                <div class="pic">
+                	<a href="#"><img src="images/f1.png" /></a>
+                	<a href="#"><img src="images/f2.png" /></a>
+                	<a href="#"><img src="images/f3.png" /></a>
+                	<a href="#"><img src="images/f4.png" /></a>
+                	<a href="#"><img src="images/f3.png" /></a>
+                	<a href="#"><img src="images/f2.png" /></a>
+                </div>
+            </li4>
+        </ul>
+    </div>
+</div>
+<div class="last">
+	<div class="log"><a href="#"><img src="images/move-top.png" /></a></div>
+	<div class="inner">
+    	<div class="log1"><img src="images/logo2.png" /></div>
+		<div class="text">Copyright@2015 All rights Reserved | Template by  <a href="#">W3layouts</a></div>
+	</div>
+</div>
+</body>
+</html>
